@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Portfolio - Elijah Jackson</title>
+        <link rel = "icon" type = "image/x-icon" href="Assets/icon.ico">
+    </head>
+    <body>
+
+        <div class="header">
+            <a href="#default" class="logo"><img src="Assets/Image/QuantexGamesLogo.png" style="width:50px;height:50px"></img></a>
+            <div class="header-right">
+                <a class="active" href="#home">Home</a>
+                <a href ="#about">About Me</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <h1>Elijah Jackson</h1>
+        <h2>Aspiring Programmer | Full Sail Student</h2>
+        <h3><a href="Assets/Jackson_Elijah_Resume.pdf" target="_blank">My Resume</a></h3>
+
+        <div class = "tab">
+            <button class = "tablinks" onClick = "openTab(event, 'Astreya')"><img src = "Assets/Image/astreya.gif" style="width:384px;height:216px"></img></button>
+            <button class = "tablinks" onClick = "openTab(event, 'Take A Chance')"><strong>Take A Chance</strong></button>
+        </div>
+
+        <div id = "Astreya" class = "tabcontent">
+        
+        <h4>Astreya: </h4>
+        <p>Top down shooter worked on w/ 4 others</p>
+        <ul>
+            <li>C++</li>
+            <li>Gateware</li>
+            <li>EnTT</li>
+            <li>Vulkan</li>
+        </ul>
+        </div>
+
+        <div id = "Take A Chance" class = "tabcontent">
+            <h4>Take A Chance: </h4>
+            <p>First person shooter worked on w/ 1 other</p>
+        </div>
+
+        <footer>
+            <p class="copyright">© 2025 Elijah Jackson. All rights reserved.</p>
+        </footer>
+
+        <script>
+            function openTab(evt, tabName) {
+                var i, tabContent, tablinks;
+                tabContent = document.getElementsByClassName("tabContent");
+                for(i = 0; i < tabContent.length; i++){
+                    tabContent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                cName = evt.currentTarget.className;
+                for(i = 0; i < tablinks.length; i++){
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                if(cName == evt.currentTarget.className){
+                    document.getElementById(tabName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,68 +1,481 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title>Portfolio - Elijah Jackson</title>
-        <link rel = "icon" type = "image/x-icon" href="Assets/icon.ico">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
 
-        <div class="header">
-            <a href="#default" class="logo"><img src="Assets/Image/QuantexGamesLogo.png" style="width:50px;height:50px"></img></a>
-            <div class="header-right">
-                <a class="active" href="#home">Home</a>
-                <a href ="#about">About Me</a>
-                <a href="#contact">Contact</a>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Elijah Jackson - Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel = "icon" type = "image/x-icon" href="assets/img/Astreya.ico">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Elijah Jackson</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="http://www.linkedin.com/in/elijahwjackson" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projects</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Elijah Jackson</h2>
+        <p>I'm a <span class="typed" data-typed-items="Programmer, Producer, Student"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>I'm a programmer currently studying game development at Full Sail University. I'm currently looking to break into the games industry through work as a gameplay programmer.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Programmer | Producer | Student</h2>
+            <p class="fst-italic py-3">
+              I'm looking to learn as much as I can about programming and software development with a focus on games. Games have positively impacted my life and I plan on doing as much as I can to share that impact to even more people!
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>September 3 2004</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>20</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Education Level:</strong> <span>Bachelor's</span></li>
+
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+1 (386) 627-0514</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>therealelijahjackson@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Deltona, FL, 32725</span></li>
+                </ul>
+              </div>
             </div>
+            <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Games</strong> <span>developed</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> <span>managed</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Team Members</strong> <span>supervised</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
         </div>
 
-        <h1>Elijah Jackson</h1>
-        <h2>Aspiring Programmer | Full Sail Student</h2>
-        <h3><a href="Assets/Jackson_Elijah_Resume.pdf" target="_blank">My Resume</a></h3>
+            </div>
 
-        <div class = "tab">
-            <button class = "tablinks" onClick = "openTab(event, 'Astreya')"><img src = "Assets/Image/astreya.gif" style="width:384px;height:216px"></img></button>
-            <button class = "tablinks" onClick = "openTab(event, 'Take A Chance')"><strong>Take A Chance</strong></button>
+            </section><!-- /Stats Section -->
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Here are some of the languages/tools that I am familiar with.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>C++</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>C#</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Unreal</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Unity</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+          </div>
+
         </div>
 
-        <div id = "Astreya" class = "tabcontent">
-        
-        <h4>Astreya: </h4>
-        <p>Top down shooter worked on w/ 4 others</p>
-        <ul>
-            <li>C++</li>
-            <li>Gateware</li>
-            <li>EnTT</li>
-            <li>Vulkan</li>
-        </ul>
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>A brief overview of my professional and educational experiences.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Summary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Elijah Jackson</h4>
+              <p><em>A current student and aspriring gameplay programmer studying at Full Sail University. Specialized in game systems.</em></p>
+              <ul>
+                <li>Deltona, FL, 32725</li>
+                <li>+1 (386) 627-0514</li>
+                <li>therealelijahjackson@gmail.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Science - Game Development</h4>
+              <h5>2023 - 2025</h5>
+              <p><em>Full Sail University, Winter Park, FL, 32792</em></p>
+              <p>Studied programming and computer science concepts as they relate to the game industry.</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Associate of Arts - General Studies</h4>
+              <h5>2020 - 2022</h5>
+              <p><em>Daytona State College, Daytona Beach, FL, 32114</em></p>
+              <p>Studied general concepts through the dual enrollment program.</p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Data Clerk - Contract</h4>
+              <h5>Aug 2023 - Dec 2024</h5>
+              <p><em>G. Charles Wohlust, P.L.C. | Orlando, Florida | On-Site | Contract</em></p>
+              <ul>
+                <li>Scanned & organized legal documents</li>
+                <li>Maintained & catalogued client information</li>
+                <li>Assited with client communication</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Data Clerk - Contract</h4>
+              <h5>Feb 2024 - Jul 2024</h5>
+              <p><em>Robert C. Wilkins, Jr., P.L. | Orlando, Florida | On-Site | Contract</em></p>
+              <ul>
+                <li>Scanned & organized legal documents</li>
+                <li>Prepared lists of validated client demographics</li>
+                <li>Verified integrity of existing customer information</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
         </div>
 
-        <div id = "Take A Chance" class = "tabcontent">
-            <h4>Take A Chance: </h4>
-            <p>First person shooter worked on w/ 1 other</p>
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+        <p>Some screenshots of my project work.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-tac">Take A Chance</li>
+            <li data-filter=".filter-astreya">Astreya</li>
+            <li data-filter=".filter-pm">Project: Meltdown</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tac">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/takeachancetitlescreen.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Take A Chance</h4>
+                  <p>Title Screen for Take A Chance</p>
+                  <a href="assets/img/portfolio/takeachancetitlescreen.jpg" title="Take A Chance title screen" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="takeachance.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-astreya">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/astreyatitlescreen.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Astreya</h4>
+                  <p>Title Screen for Astreya</p>
+                  <a href="assets/img/portfolio/astreyatitlescreen.jpg" title="Astreya title screen" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="astreya.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pm">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/pmtitlescreen.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Project: Meltdown</h4>
+                  <p>Title Screen for Project: Meltdown</p>
+                  <a href="assets/img/portfolio/pmtitlescreen.jpg" title="Project: Meltdown title screen" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="pm.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div><!-- End Portfolio Container -->
+
         </div>
 
-        <footer>
-            <p class="copyright">© 2025 Elijah Jackson. All rights reserved.</p>
-        </footer>
+      </div>
 
-        <script>
-            function openTab(evt, tabName) {
-                var i, tabContent, tablinks;
-                tabContent = document.getElementsByClassName("tabContent");
-                for(i = 0; i < tabContent.length; i++){
-                    tabContent[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablinks");
-                cName = evt.currentTarget.className;
-                for(i = 0; i < tablinks.length; i++){
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                if(cName == evt.currentTarget.className){
-                    document.getElementById(tabName).style.display = "block";
-                    evt.currentTarget.className += " active";
-                }
-            }
-        </script>
+    </section><!-- /Portfolio Section -->
 
-    </body>
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Feel free to reach out!</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Location</h3>
+                  <p>Deltona, FL, 32725</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Me</h3>
+                  <p>+1 (386) 627-0514</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Me</h3>
+                  <p>therealelijahjackson@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe src="https://maps.google.com/maps?width=100%25&amp;height=270&amp;hl=en&amp;q=Deltona,%20FL+(Elijah%20Jackson)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Elijah Jackson</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>

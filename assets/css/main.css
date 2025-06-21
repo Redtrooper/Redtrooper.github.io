@@ -40,12 +40,15 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f4fafd;
-  --surface-color: #ffffff;
+  --background-color: #131f2b;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #151f2b;
+  --contrast-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #040b14;
+  --background-color: #0a1116;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #151f2b;
@@ -540,9 +543,9 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Home Section
 --------------------------------------------------------------*/
-.hero {
+.home {
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -552,7 +555,7 @@ section,
   justify-content: center;
 }
 
-.hero img {
+.home img {
   position: absolute;
   inset: 0;
   display: block;
@@ -562,7 +565,7 @@ section,
   z-index: 1;
 }
 
-.hero:before {
+.home:before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 70%);
   position: absolute;
@@ -570,32 +573,32 @@ section,
   z-index: 2;
 }
 
-.hero .container {
+.home .container {
   position: relative;
   z-index: 3;
 }
 
-.hero h2 {
+.home h2 {
   margin: 0;
   font-size: 64px;
   font-weight: 700;
 }
 
-.hero p {
+.home p {
   margin: 5px 0 0 0;
   font-size: 26px;
 }
 
-.hero p span {
+.home p span {
   letter-spacing: 1px;
   border-bottom: 2px solid var(--accent-color);
 }
 
-.hero .social-links {
+.home .social-links {
   margin-top: 25px;
 }
 
-.hero .social-links a {
+.home .social-links a {
   font-size: 24px;
   display: inline-block;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
@@ -604,16 +607,16 @@ section,
   transition: 0.3s;
 }
 
-.hero .social-links a:hover {
+.home .social-links a:hover {
   color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
-  .hero h2 {
+  .home h2 {
     font-size: 32px;
   }
 
-  .hero p {
+  .home p {
     font-size: 20px;
   }
 }
@@ -684,38 +687,62 @@ section,
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+.skills-title {
+  padding-bottom: 60px;
+  position: relative;
 }
 
-.skills .progress .skill {
-  color: var(--heading-color);
+.skills-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  position: relative;
+}
+
+.skills-title h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  bottom: 0;
+}
+
+.skills-title p {
+  margin-bottom: 0;
+}
+
+.skills .content h2 {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom:  0px;
+}
+
+.skills .content ul {
+  list-style: none;
+  font-size: 28px;
   padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: var(--heading-font);
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+.skills .content ul li {
+  margin-bottom: 20px;
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
 }
 
-.skills .progress-bar-wrap {
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
-  height: 10px;
+.skills .content ul strong {
+  margin-right: 10px;
 }
 
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: var(--accent-color);
+.skills .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: var(--accent-color);
+  line-height: 0;
 }
 
 /*--------------------------------------------------------------
@@ -778,16 +805,16 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Portfolio Section
+# Projects Section
 --------------------------------------------------------------*/
-.portfolio .portfolio-filters {
+.projects .projects-filters {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
 }
 
-.portfolio .portfolio-filters li {
+.projects .projects-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 0;
@@ -800,36 +827,36 @@ section,
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li.filter-active {
+.projects .projects-filters li:hover,
+.projects .projects-filters li.filter-active {
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-filters li:first-child {
+.projects .projects-filters li:first-child {
   margin-left: 0;
 }
 
-.portfolio .portfolio-filters li:last-child {
+.projects .projects-filters li:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
+  .projects .projects-filters li {
     font-size: 14px;
     margin: 0 5px;
   }
 }
 
-.portfolio .portfolio-content {
+.projects .projects-content {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio .portfolio-content img {
+.projects .projects-content img {
   transition: 0.3s;
 }
 
-.portfolio .portfolio-content .portfolio-info {
+.projects .projects-content .projects-info {
   opacity: 0;
   position: absolute;
   inset: 0;
@@ -839,7 +866,7 @@ section,
   padding: 15px;
 }
 
-.portfolio .portfolio-content .portfolio-info h4 {
+.projects .projects-content .projects-info h4 {
   font-size: 14px;
   padding: 5px 10px;
   font-weight: 400;
@@ -848,7 +875,7 @@ section,
   background-color: var(--accent-color);
 }
 
-.portfolio .portfolio-content .portfolio-info p {
+.projects .projects-content .projects-info p {
   position: absolute;
   bottom: 10px;
   text-align: center;
@@ -860,8 +887,8 @@ section,
   color: rgba(255, 255, 255, 0.8);
 }
 
-.portfolio .portfolio-content .portfolio-info .preview-link,
-.portfolio .portfolio-content .portfolio-info .details-link {
+.projects .projects-content .projects-info .preview-link,
+.projects .projects-content .projects-info .details-link {
   position: absolute;
   left: calc(50% - 40px);
   font-size: 26px;
@@ -871,22 +898,22 @@ section,
   line-height: 1.2;
 }
 
-.portfolio .portfolio-content .portfolio-info .preview-link:hover,
-.portfolio .portfolio-content .portfolio-info .details-link:hover {
+.projects .projects-content .projects-info .preview-link:hover,
+.projects .projects-content .projects-info .details-link:hover {
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-content .portfolio-info .details-link {
+.projects .projects-content .projects-info .details-link {
   left: 50%;
   font-size: 34px;
   line-height: 0;
 }
 
-.portfolio .portfolio-content:hover .portfolio-info {
+.projects .projects-content:hover .projects-info {
   opacity: 1;
 }
 
-.portfolio .portfolio-content:hover img {
+.projects .projects-content:hover img {
   transform: scale(1.1);
 }
 

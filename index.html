@@ -51,15 +51,21 @@
     </a>
 
     <div class="social-links text-center">
-      <a href="http://www.linkedin.com/in/elijahwjackson" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="http://www.linkedin.com/in/elijahwjackson" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
     </div>
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#home" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projects</a></li>
+         <li class="dropdown"><a href="#projects"><i class="bi bi-menu-button navicon"></i> <span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="takeachance.html">Take A Chance</a></li>
+            <li><a href="astreya.html">Astreya</a></li>
+            <li><a href="pm.html">Project: Meltdown</a></li>
+          </ul>
+        </li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
@@ -68,20 +74,20 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <!-- Home Section -->
+    <section id="home" class="home section light-background">
 
       <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Elijah Jackson</h2>
-        <p>I'm a <span class="typed" data-typed-items="Programmer, Producer, Student"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>I'm a <span class="typed" data-typed-items="Gameplay Programmer, Producer"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
-    </section><!-- /Hero Section -->
+    </section><!-- /Home Section -->
 
     <!-- About Section -->
-    <section id="about" class="about section">
+    <section id="about" class="about section dark-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -96,7 +102,7 @@
             <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
-            <h2>Programmer | Producer | Student</h2>
+            <h2>Gameplay Programmer | Producer</h2>
             <p class="fst-italic py-3">
               I'm looking to learn as much as I can about programming and software development with a focus on games. Games have positively impacted my life and I plan on doing as much as I can to share that impact to even more people!
             </p>
@@ -118,7 +124,7 @@
               </div>
             </div>
             <!-- Stats Section -->
-    <section id="stats" class="stats section">
+    <section id="stats" class="stats section dark-background">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -143,7 +149,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="stats-item">
               <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Team Members</strong> <span>supervised</span></p>
             </div>
           </div><!-- End Stats Item -->
@@ -163,133 +169,56 @@
     <section id="skills" class="skills section light-background">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container skills-title" data-aos="fade-up">
         <h2>Skills</h2>
-        <p>Here are some of the languages/tools that I am familiar with.</p>
       </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>C++</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      <div class="row gy-4 justify-content-center">
+          <div class="col-lg-7 content">
+            <div class="row justify-content-center">
+              <div class="col-lg-3">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>C++</strong></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>C#</strong></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Java</strong></li>
+                </ul>
               </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>C#</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="col-lg-3">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>SQL</strong></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Git</strong></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Perforce</strong></li>
+                </ul>
               </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Unreal</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="col-lg-3">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Unreal</strong></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Unity</strong></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Trello</strong></li>
+                </ul>
               </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Unity</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="col-lg-3">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Jira</strong></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Scrum</strong></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Agile</strong></li>
+                </ul>
               </div>
-            </div><!-- End Skills Item -->
-          </div>
-
-        </div>
-
-      </div>
-
+            </div>
     </section><!-- /Skills Section -->
 
     <!-- Resume Section -->
-    <section id="resume" class="resume section">
+    <section id="resume" class="resume section dark-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
-        <p>A brief overview of my professional and educational experiences.</p>
+              <a href="assets/img/JacksonElijahResumePublic.pdf" target="_blank"><img src="assets/img/JacksonElijahResumePublic.jpg" class="img-fluid" alt=""></a>
       </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Summary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Elijah Jackson</h4>
-              <p><em>A current student and aspriring gameplay programmer studying at Full Sail University. Specialized in game systems.</em></p>
-              <ul>
-                <li>Deltona, FL, 32725</li>
-                <li>+1 (386) 627-0514</li>
-                <li>therealelijahjackson@gmail.com</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Bachelor of Science - Game Development</h4>
-              <h5>2023 - 2025</h5>
-              <p><em>Full Sail University, Winter Park, FL, 32792</em></p>
-              <p>Studied programming and computer science concepts as they relate to the game industry.</p>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Associate of Arts - General Studies</h4>
-              <h5>2020 - 2022</h5>
-              <p><em>Daytona State College, Daytona Beach, FL, 32114</em></p>
-              <p>Studied general concepts through the dual enrollment program.</p>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Data Clerk - Contract</h4>
-              <h5>Aug 2023 - Dec 2024</h5>
-              <p><em>G. Charles Wohlust, P.L.C. | Orlando, Florida | On-Site | Contract</em></p>
-              <ul>
-                <li>Scanned & organized legal documents</li>
-                <li>Maintained & catalogued client information</li>
-                <li>Assited with client communication</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Data Clerk - Contract</h4>
-              <h5>Feb 2024 - Jul 2024</h5>
-              <p><em>Robert C. Wilkins, Jr., P.L. | Orlando, Florida | On-Site | Contract</em></p>
-              <ul>
-                <li>Scanned & organized legal documents</li>
-                <li>Prepared lists of validated client demographics</li>
-                <li>Verified integrity of existing customer information</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
-        </div>
-
-      </div>
 
     </section><!-- /Resume Section -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
+    <!-- Projects Section -->
+    <section id="projects" class="projects section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -301,7 +230,7 @@
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+          <ul class="projects-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-tac">Take A Chance</li>
             <li data-filter=".filter-astreya">Astreya</li>
@@ -311,9 +240,9 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tac">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/takeachancetitlescreen.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
+               <div class="projects-content h-100">
+                 <img src="assets/img/portfolio/takeachancetitlescreen.jpg" class="img-fluid" alt="">
+                <div class="projects-info">
                   <h4>Take A Chance</h4>
                   <p>Title Screen for Take A Chance</p>
                   <a href="assets/img/portfolio/takeachancetitlescreen.jpg" title="Take A Chance title screen" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
@@ -322,10 +251,10 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-astreya">
-              <div class="portfolio-content h-100">
+            <div class="col-lg-4 col-md-6 projects-item isotope-item filter-astreya">
+              <div class="projects-content h-100">
                 <img src="assets/img/portfolio/astreyatitlescreen.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
+                <div class="projects-info">
                   <h4>Astreya</h4>
                   <p>Title Screen for Astreya</p>
                   <a href="assets/img/portfolio/astreyatitlescreen.jpg" title="Astreya title screen" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
@@ -334,24 +263,24 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pm">
-              <div class="portfolio-content h-100">
+            <div class="col-lg-4 col-md-6 projects-item isotope-item filter-pm">
+              <div class="projects-content h-100">
                 <img src="assets/img/portfolio/pmtitlescreen.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
+                <div class="projects-info">
                   <h4>Project: Meltdown</h4>
                   <p>Title Screen for Project: Meltdown</p>
                   <a href="assets/img/portfolio/pmtitlescreen.jpg" title="Project: Meltdown title screen" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="pm.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div><!-- End Portfolio Container -->
+          </div><!-- End Projects Container -->
 
         </div>
 
       </div>
 
-    </section><!-- /Portfolio Section -->
+    </section><!-- /Projects Section -->
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <section id="contact" class="contact section dark-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">

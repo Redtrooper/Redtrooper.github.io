@@ -520,7 +520,9 @@ url("./fonts/bootstrap-icons.woff?dd67030699838ea613ee6dbda90effa6") format("wof
 .bi-diagram-2::before { content: "\f2ec"; }
 .bi-diagram-3-fill::before { content: "\f2ed"; }
 .bi-diagram-3::before { content: "\f2ee"; }
-.bi-diamond-fill::before { content: "\f2ef"; }
+.bi-diamond-fill::before { content: "\f2ef";
+margin-right: 25px;
+}
 .bi-diamond-half::before { content: "\f2f0"; }
 .bi-diamond::before { content: "\f2f1"; }
 .bi-dice-1-fill::before { content: "\f2f2"; }

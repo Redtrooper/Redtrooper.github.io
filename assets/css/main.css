@@ -635,7 +635,7 @@ section,
 }
 
 .about .content ul li {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   display: flex;
   align-items: center;
 }
@@ -654,8 +654,20 @@ section,
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
+.stats-section{
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 20px 0px;
+  overflow: clip;
+}
+
 .stats .stats-item {
   padding: 0px;
+  width: 100%;
+}
+
+.stats a.fill{
+  height: 100%;
   width: 100%;
 }
 
@@ -728,7 +740,7 @@ section,
 }
 
 .skills .content ul li {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-left: 60px;
   display: flex;
   align-items: center;
@@ -866,6 +878,13 @@ section,
   padding: 15px;
 }
 
+.projects .projects-content a.fill{
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+
 .projects .projects-content .projects-info h4 {
   font-size: 14px;
   padding: 5px 10px;
@@ -890,7 +909,7 @@ section,
 .projects .projects-content .projects-info .preview-link,
 .projects .projects-content .projects-info .details-link {
   position: absolute;
-  left: calc(50% - 40px);
+  left: calc(50% - 20px);
   font-size: 26px;
   top: calc(50% - 14px);
   color: #fff;
@@ -914,7 +933,7 @@ section,
 }
 
 .projects .projects-content:hover img {
-  transform: scale(1.1);
+  transform: scale(1);
 }
 
 /*--------------------------------------------------------------
@@ -1297,6 +1316,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
+/*.starter-section {
   /* Add your styles here */
-}
+/*}

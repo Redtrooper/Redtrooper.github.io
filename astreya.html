@@ -95,51 +95,64 @@
         <div class="row gy-4">
 
           <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
 
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
-
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Astreya/TitleScreen.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Astreya/TitleScreen.jpg" alt="">
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
+            <body>
+            <!-- Swiper -->
+            <div class="portfolio-details-slider swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/portfolio/Astreya/TitleScreen.jpg" alt=""></div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
+
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              cssMode: true,
+              loop: true,
+              speed: 600,
+              autoplay: {
+                delay: 5000
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              mousewheel: true,
+              keyboard: true,
+            });
+          </script>
+        </body>
+
+          </div>
+
 
           <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
               <h3>Astreya</h3>
               <ul>
-                <li><strong>Role</strong>: Lead Developer | Producer</li>
+                <li><strong>Role</strong>: Lead Developer</li>
                 <li><strong>Studio</strong>: Quantex Games</li>
                 <li><strong>Team Size</strong>: 5</li>
                 <li><strong>Duration</strong>: Ongoing</li>
+                <li><strong>Gateware</strong>: <a href="https://gitlab.com/gateware-development/gateware">https://gitlab.com/gateware-development/gateware</a> </li>
+                <li><strong>Vulkan</strong>: <a href="https://www.vulkan.org">https://www.vulkan.org</a> </li>
+                <li><strong>EnTT</strong>: <a href="https://github.com/skypjack/entt">https://github.com/skypjack/entt</a> </li>
               </ul>
             </div>
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
               <h2>Project Description</h2>
               <p>
-                Astreya is a top down shooter that my team is working on currently. The project uses ENTT for entity management & Gateware for core features such as input, sound, and window creation. The Game also uses Vulkan for its rendering.
+                <i>Astreya</i> is an endless top-down shooter created in C++ using  where the player fights an onslaught of different enemies while trying to get the highest score possible.
               </p>
             </div>
           </div>
@@ -147,6 +160,200 @@
         </div>
 
       </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+    <section id="projects" class="projects section dark-background">
+
+      <!-- Section Title -->
+      <div class="container project-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>
+          <i>Astreya</i> is a game styled after arcade games such as <i>Asteroids</i> & <i>Galaga</i>. 
+          By basing the gameplay loop on the arcade style, the project scope has remained small allowing for a more complete experience.
+          The game was made with replayability in mind through the high score system as well as player upgrades which both enable different playstyles.
+          This project was made while at <i>Full Sail University<i> for my Project & Portfolio V class.
+          Additionally, this project was made using Gateware (a graphics, sound, and input library), Vulkan (a graphics API), and EnTT (an entity component system).
+        </p>
+      </div><!--Section Description End-->
+
+
+
+      <div class="container container-image" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-12 col-md-12 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/mTGU4-0moHg?si=RL5hV5VMlXrZEJMj"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container secondary-title" data-aos="fade-up">
+        <h2>The Gameplay Loop</h2>
+        <p>
+          When making the gameplay loop, I wanted to focus on replayability and ramping difficulty to make each run unique and fun.
+          To do so, I made sure that the game only ends when the player loses all of their health and that more enemies spawn over time.
+          I also wrote the portion of the game's code that deals with enemy spawn position, allowing for each enemy to spawn randomly around the screen border.
+          Additionally, I balanced the enemy spawns by increasing the number of asteroids that can spawn over time in addition to the UFO & Noremac which spawn based on time and the Vampire which spawns based on score.
+          Last, I ensured that the player's base stats were balanced with the enemies so the game would have a reasonable difficulty curve.
+        </p>
+      </div><!--Subsection End-->
+
+      <div class="container container-image" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-2 col-md-2 projects-item isotope-item"> </div>
+          <div class="col-lg-8 col-md-8 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Astreya/GameplayLoop.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Astreya/GameplayLoop.jpg">
+              <div class="projects-info">
+                <h4>Astreya</h4>
+                <p>Astreya: Gameplay</p>
+                <a href="assets/img/portfolio/Astreya/GameplayLoop.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 projects-item isotope-item"> </div>
+          <div class="col-lg-4 col-md-4 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Astreya/LargeAsteroid.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Astreya/LargeAsteroid.jpg">
+              <div class="projects-info">
+                <h4>Astreya</h4>
+                <p>Astreya: Large Asteroid</p>
+                <a href="assets/img/portfolio/Astreya/LargeAsteroid.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Astreya/MediumAsteroid.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Astreya/MediumAsteroid.jpg">
+              <div class="projects-info">
+                <h4>Astreya</h4>
+                <p>Astreya: Medium Asteroid</p>
+                <a href="assets/img/portfolio/Astreya/MediumAsteroid.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Astreya/SmallAsteroid.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Astreya/SmallAsteroid.jpg">
+              <div class="projects-info">
+                <h4>Astreya</h4>
+                <p>Astreya: Small Asteroid</p>
+                <a href="assets/img/portfolio/Astreya/SmallAsteroid.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Astreya/UFO.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Astreya/UFO.jpg">
+              <div class="projects-info">
+                <h4>Astreya</h4>
+                <p>Astreya: UFO</p>
+                <a href="assets/img/portfolio/Astreya/UFO.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Astreya/Vampire.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Astreya/Vampire.jpg">
+              <div class="projects-info">
+                <h4>Astreya</h4>
+                <p>Astreya: Vampire</p>
+                <a href="assets/img/portfolio/Astreya/Vampire.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Astreya/Noremac.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Astreya/Noremac.jpg">
+              <div class="projects-info">
+                <h4>Astreya</h4>
+                <p>Astreya: Noremac</p>
+                <a href="assets/img/portfolio/Astreya/Noremac.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container secondary-title" data-aos="fade-up">
+        <h2>Upgrades</h2>
+        <p>
+          The largest difference between Astreya and the games that it was inspired by is the upgrades system.
+          Upgrading stats serves as the main way for the player to get stronger alongside the enemies while also allowing "builds" that tailor the gameplay to the style of each player.
+          The most important part of the system is that each upgrade cost score, creating a drawback to the system.
+          While the pricing goes up exponentially, the actual impact of most upgrades (excluding those that have static increases ex. health or guns) uses a diminishing returns algorithm to keep the gameplay balanced.
+          With the player being an entity component, the system grabs that entity to specifically increase the stats that are selected.
+          The player uses the stats that are created to add multipliers to in game actions (like speed or fire rate), the user interface calls the function necessary to increase those multipliers, and they are reset once the player dies.
+        </p>
+      </div><!--Subsection End-->
+
+      <div class="container container-image" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-6 col-md-6 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Astreya/UpgradeMenu.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Astreya/UpgradeMenu.jpg">
+              <div class="projects-info">
+                <h4>Astreya</h4>
+                <p>Astreya: Upgrades Menu</p>
+                <a href="assets/img/portfolio/Astreya/UpgradeMenu.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Astreya/UpgradeCode.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Astreya/UpgradeCode.jpg">
+              <div class="projects-info">
+                <h4>Astreya</h4>
+                <p>Astreya: Upgrade Code</p>
+                <a href="assets/img/portfolio/Astreya/UpgradeCode.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container secondary-title" data-aos="fade-up">
+        <h2>High Scores</h2>
+        <p>
+          To keep the game competitive, I implemented an online high score API provided by an instructor at <i>Full Sail University</i>.
+          This API originally stored ints as strings online, then converted them back to ints for saving scores.
+          I modified that code to save both the player's score and their name (as the online component simply stored a list of strings).
+          The version of the code that this project uses saves the name and the score with a space used as a delimiter.
+          Then with an updated version of the parsing function we parse the name and score into the game to display to all players.
+          With high scores being the competitive part of our game, they are saved fully online without any local data used to keep players from interfering with the leaderboards.
+          This ensures the integrity of the leaderboards while keeping the game competitive.
+        </p>
+      </div><!--Subsection End-->
+
+      <div class="container container-image" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-8 col-md-8 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Astreya/HighScoreTable.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Astreya/HighScoreTable.jpg">
+              <div class="projects-info">
+                <h4>Astreya</h4>
+                <p>Astreya: High Score Table</p>
+                <a href="assets/img/portfolio/Astreya/HighScoreTable.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container secondary-title" data-aos="fade-up">
+        <h2>Next Steps</h2>
+        <p>
+          Going forward, I plan to refactor some of the existing code in the game for the purposes of future iteration.
+          Specifically, refactoring some of the UI code to allow for more streamlined menu creation and navigation.
+          Next, to add more challenge to the later portion of the game I will increase the health of the enemies the longer the player survives.
+          Finally, I will integrate the <i>Steamworks SDK</i> to allow for a full release on <i>Steam</i>.
+          Overall, I want to polish what we have complete to prepare for release as the game already feels very complete due to its small scope.
+        </p>
+      </div><!--Subsection End-->
 
     </section><!-- /Portfolio Details Section -->
 

@@ -95,33 +95,46 @@
         <div class="row gy-4">
 
           <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
 
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
-
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/takeachancetitlescreen.jpg" alt="">
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
+            <body>
+            <!-- Swiper -->
+            <div class="portfolio-details-slider swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/portfolio/Take A Chance/TitleScreen.jpg" alt=""></div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
+
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              cssMode: true,
+              loop: true,
+              speed: 600,
+              autoplay: {
+                delay: 5000
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              mousewheel: true,
+              keyboard: true,
+            });
+          </script>
+        </body>
+
+          </div>
+
 
           <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
@@ -131,13 +144,13 @@
                 <li><strong>Studio</strong>: Quantex Games</li>
                 <li><strong>Team Size</strong>: 2</li>
                 <li><strong>Duration</strong>: 2 Months</li>
-                <li><strong>Project URL</strong>: <a href="https://paratox.itch.io/take-a-chance">Take A Chance</a></li>
+                <li><strong>Unity</strong>: <a href="https://unity.com">https://unity.com</a> </li>
               </ul>
             </div>
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
               <h2>Project Description</h2>
               <p>
-                Take A Chance is a game that I developed for my midterm at Full Sail University. This project taught me how the game development process works and make a functioning game. Additionally, I got experience with Unity and component based development overall. I also got experience helping communicate with a team. We used elements of SCRUM to manage the team with a sprint board and daily check-ins.
+                <i>Take A Chance</i> is a rougelike level-based first-person shooter developed using Unity.
               </p>
             </div>
           </div>
@@ -148,9 +161,261 @@
 
     </section><!-- /Portfolio Details Section -->
 
+    <section id="projects" class="projects section dark-background">
+
+      <!-- Section Title -->
+      <div class="container project-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>
+          <i>Take A Chance</i> was the first game that I ever created and was made as my midterm project at <i>Full Sail University</i>.
+          While it reamins mostly unfinished, in creating as much as I did I learned a lot about the game creation pipeline.
+          The idea that my team had going in was a replayable first-person-shooter that was inspired by elements from games such as <i>Risk of Rain 2</i>.
+          Overall, the game stands as a solid foundation for starting with and ideas from that game helped me move forward to becoming a gameplay programmer.
+        </p>
+      </div><!--Section Description End-->
+
+
+
+      <div class="container container-image" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-12 col-md-12 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/L-74TqpMbaI?si=RyzMWlt7JpibOW-o"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container secondary-title" data-aos="fade-up">
+        <h2>Weapon System</h2>
+        <p>
+          When making <i>Take A Chance</i> I created a combat sytem that allows the player to switch between 2 different weapons. 
+          Both weapons are ranged, one being an assault rifle and the other a shotgun with bullet spread.
+          Creating this system allowed me to learn about projectile-based combat (the creation of a projectile which handles the damage to what it hits) and how to create a basic weapon inventory.
+          I also solved the issue of weapons not firing towards the center of the screen by rotating the weapon towards center screen to ensure accuracy.
+          Overall, this weapon system established many core components that would go into the creation of the weapon system for my next major shooter <i><a href="mechanicalmeltdown.html">Mechanical Meltdown</a></i>.
+        </p>
+      </div><!--Subsection End-->
+
+      <div class="container container-image" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-6 col-md-6 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Take A Chance/AssaultRifle.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Take A Chance/AssaultRifle.jpg">
+              <div class="projects-info">
+                <h4>Take A Chance</h4>
+                <p>Take A Chance: Assault Rifle</p>
+                <a href="assets/img/portfolio/Take A Chance/AssaultRifle.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Take A Chance/Shotgun.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Take A Chance/Shotgun.jpg">
+              <div class="projects-info">
+                <h4>Take A Chance</h4>
+                <p>Take A Chance: Shotgun</p>
+                <a href="assets/img/portfolio/Take A Chance/Shotgun.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container secondary-title" data-aos="fade-up">
+        <h2>Items</h2>
+        <p>
+          The core component of <i>Take A Chance</i> was the creation of the item system. 
+          Each item spawns randomly, allowing players to have a different experience each time.
+          While some items directly alter stats that the player has, others (such as grenade and air dash) unlock abilities that the player can use during combat.
+          I created each item to enhance player stats, however in not using an algorithm (such as a diminishing returns algorithm) to balance the item stat increases many items can become incredibly overpowered or game breaking after collecting too many.
+          This is part of the reason why in my next game <i><a href="astreya.html">Astreya</a></i> I used a diminishing returns algorithm to keep the game balanced.
+        </p>
+      </div><!--Subsection End-->
+
+      <div class="container container-image" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-12 col-md-12 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Take A Chance/Items.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Take A Chance/Items.jpg">
+              <div class="projects-info">
+                <h4>Take A Chance</h4>
+                <p>Take A Chance: Air Dash Item</p>
+                <a href="assets/img/portfolio/Take A Chance/Items.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Take A Chance/AirDash.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Take A Chance/AirDash.jpg">
+              <div class="projects-info">
+                <h4>Take A Chance</h4>
+                <p>Take A Chance: Air Dash Item</p>
+                <a href="assets/img/portfolio/Take A Chance/AirDash.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Take A Chance/Binoculars.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Take A Chance/Binoculars.jpg">
+              <div class="projects-info">
+                <h4>Take A Chance</h4>
+                <p>Take A Chance: Binoculars Item</p>
+                <a href="assets/img/portfolio/Take A Chance/Binoculars.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Take A Chance/SharperBullets.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Take A Chance/SharperBullets.jpg">
+              <div class="projects-info">
+                <h4>Take A Chance</h4>
+                <p>Take A Chance: Sharper Bullets Item</p>
+                <a href="assets/img/portfolio/Take A Chance/SharperBullets.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Take A Chance/GunTuneUp.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Take A Chance/GunTuneUp.jpg">
+              <div class="projects-info">
+                <h4>Take A Chance</h4>
+                <p>Take A Chance: Gun Tune Up Item</p>
+                <a href="assets/img/portfolio/Take A Chance/GunTuneUp.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Take A Chance/Grenade.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Take A Chance/Grenade.jpg">
+              <div class="projects-info">
+                <h4>Take A Chance</h4>
+                <p>Take A Chance: Grenade Item</p>
+                <a href="assets/img/portfolio/Take A Chance/Grenade.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Take A Chance/Cheeseburger.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Take A Chance/Cheeseburger.jpg">
+              <div class="projects-info">
+                <h4>Take A Chance</h4>
+                <p>Take A Chance: Cheeseburger Item</p>
+                <a href="assets/img/portfolio/Take A Chance/Cheeseburger.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Take A Chance/LifeSteal.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Take A Chance/LifeSteal.jpg">
+              <div class="projects-info">
+                <h4>Take A Chance</h4>
+                <p>Take A Chance: Life Steal Item</p>
+                <a href="assets/img/portfolio/Take A Chance/LifeSteal.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Take A Chance/MedKit.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Take A Chance/MedKit.jpg">
+              <div class="projects-info">
+                <h4>Take A Chance</h4>
+                <p>Take A Chance: MedKit Item</p>
+                <a href="assets/img/portfolio/Take A Chance/MedKit.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Take A Chance/AdrenalineRush.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Take A Chance/AdrenalineRush.jpg">
+              <div class="projects-info">
+                <h4>Take A Chance</h4>
+                <p>Take A Chance: Adrenaline Rush Item</p>
+                <a href="assets/img/portfolio/Take A Chance/AdrenalineRush.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Take A Chance/Milk.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Take A Chance/Milk.jpg">
+              <div class="projects-info">
+                <h4>Take A Chance</h4>
+                <p>Take A Chance: Milk Item</p>
+                <a href="assets/img/portfolio/Take A Chance/Milk.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Take A Chance/Banana.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Take A Chance/Banana.jpg">
+              <div class="projects-info">
+                <h4>Take A Chance</h4>
+                <p>Take A Chance: Banana Item</p>
+                <a href="assets/img/portfolio/Take A Chance/Banana.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container secondary-title" data-aos="fade-up">
+        <h2>Game States</h2>
+        <p>
+          The last core component of the game I worked on was game states.
+          In creating a level-based game, my team ran into the problem of saving player data between levels.
+          Our game loop required the player to be able to bring their weapons and items between levels to continue progression.
+          To enable the player to do this, I used the Unity PlayerPrefs system.
+          This system allowed me to cache off the player's progress and items to be reloaded in the next level.
+          However, this causes another issue in the player being able to alter those files to change their game progress.
+          In a singleplayer game this isn't much of an issue, but a multiplayer game or a more competitive game wouldn't use a system this way to ensure the game remains fair.
+          This is another line of reasoning that was carried into my next project, <i><a href="astreya.html">Astreya</a></i>, as I ensured that there was no way to edit online scores before they were sent to the server.
+        </p>
+      </div><!--Subsection End-->
+
+      <div class="container container-image" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-6 col-md-6 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Take A Chance/LoadPlayerData.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Take A Chance/LoadPlayerData.jpg">
+              <div class="projects-info">
+                <h4>Take A Chance</h4>
+                <p>Take A Chance: Load Player Data Code</p>
+                <a href="assets/img/portfolio/Take A Chance/LoadPlayerData.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 projects-item isotope-item">
+            <div class="projects-content h-100">
+              <img src="assets/img/portfolio/Take A Chance/LoadUIData.jpg" class="img-fluid" alt="" href="assets/img/portfolio/Take A Chance/LoadUIData.jpg">
+              <div class="projects-info">
+                <h4>Take A Chance</h4>
+                <p>Take A Chance: Load UI Data Code</p>
+                <a href="assets/img/portfolio/Take A Chance/LoadUIData.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container secondary-title" data-aos="fade-up">
+        <h2>Postmortem</h2>
+        <p>
+          Completing this project taught me a lot about game creation that I carried forward into my next projects.
+          In being one of the most tough games to create because the team went down to 2 people, and being the first game I made it still is special to me.
+          Although I've suspended any development on the project I wouldn't be fully against returning to it in the future with the knowledge I've gained since then.
+          This project taught me a lot about prioritizing what is important, communicating with team members, and about resolving conflicts that arise during development.
+          I think that the game came out incredibly well for what it was, although there were many features that had to be cut.
+          The biggest lesson I learned is to be careful of scope and time, because with our team size in mind I should've cut features such as procedural generation earlier to allow more time to other areas of the game.
+        </p>
+      </div><!--Subsection End-->
+
+    </section><!-- /Portfolio Details Section -->
+
   </main>
 
-  <footer id="footer" class="footer position-relative dark-background">
+  <footer id="footer" class="footer position-relative light-background">
 
     <div class="container">
       <div class="copyright text-center ">
